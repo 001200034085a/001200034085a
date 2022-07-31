@@ -1,0 +1,5 @@
+{
+    "name":"đặng tiến phú",
+    "age":22,
+    "gender":"nam
+}
