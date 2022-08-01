@@ -47,10 +47,6 @@ router.post("/search", async(req,res)=>{
 
  });
 
-router.get("/",authMidleware,(req,res)=>{
-    // midleware
-    res.send("hello world")
-  })
 
 // get 
 router.get("/",(req,res)=>{
