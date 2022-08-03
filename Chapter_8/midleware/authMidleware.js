@@ -7,7 +7,7 @@ const authMidleware=(req,res,next)=>{
 //    check token iscorrect or incorrect
 try{
     // verifi
-    const checkToken=jwt.veryfi(token,"chuoibimat");
+    const checkToken=jwt.verify(token,"chuoibimat");
     req.user=checkToken
    next();
 }
