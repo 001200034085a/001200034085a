@@ -11,6 +11,7 @@ Register a new user
     "password": "123456",
     "isAdmin": false
 }
+
 Login
 // @desc: Log user into the system
 // @route: POST https://mindx2.herokuapp.com//api/users/login
@@ -20,6 +21,7 @@ Login
     "email": "user1@gmail.com",
     "password": "123456"
 }
+
 Get Profile user
 // @desc: Get user profile
 // @route: GET https://mindx2.herokuapp.com/api/users/profile
@@ -35,19 +37,23 @@ Update Profile user
     "email": "new@gmail.com",
     "password": "1234567"
 }
+
 Get all users
 // @desc: Get all users
 // @route: GET https://mindx2.herokuapp.com//api/users
 // @access: Private/admin
+
 Delete user
 // @desc: Delete user
 // @route: DELETE https://mindx2.herokuapp.com/api/users/:id
 // ID user mẫu đã có sẵn trong DB để test: 62fcf69e6e7e3d52212f36ea
 // @access: Private/admin
+
 Get user by ID
 // @desc: Get user by ID
 // @route: GET https://mindx2.herokuapp.com/api/users/:id
 // @access: Private/admin
+
 Update user by ID
 // @desc: Update user by ID
 // @route: PUT https://mindx2.herokuapp.com/api/users/:id
@@ -63,20 +69,24 @@ Update user by ID
 
 
 2. API Product
+
 Get all products
 // @desc: Get all products
 // @route: GET https://mindx2.herokuapp.com/api/products
 // @access: Public
+
 Get product by ID
 // @desc: Get product by ID
 // @route: GET https://mindx2.herokuapp.com/api/products/:id
 // ID product mẫu đã có sẵn trong DB để test: 62fcf7fd6e7e3d52212f36fa
 // @access: Public
+
 Delete product by ID
 // @desc: Delete product by ID
 // @route: DELETE https://mindx2.herokuapp.com/api/products/:id
 // ID product mẫu đã có sẵn trong DB để test: 62fcf89e6e7e3d52212f3701
 // @access: Private/admin
+
 Create product
 // @desc: Create product
 // @route: POST https://mindx2.herokuapp.com/api/products
@@ -92,6 +102,7 @@ Create product
     "price": 200,
     "countInStock": 12
 }
+
 Update a product
 // @desc: Update a product
 // @route: PUT https://mindx2.herokuapp.com/api/products/:id
@@ -103,6 +114,7 @@ Update a product
     "category": "new category",
     "description": "new desc"
 }
+
 Create new review for product
 // @desc: Create new review for product
 // @route: POST https://mindx2.herokuapp.com/api/products/:id/reviews
@@ -113,6 +125,7 @@ Create new review for product
     "rating": 2,
     "comment": "Comment for review 1"
 }
+
 Get top 5 products (top 5 sản phẩm được rating trung bình cao nhất)
 // @desc: Get top 5 products
 // @route: GET https://mindx2.herokuapp.com/api/products/top
@@ -124,14 +137,17 @@ Get all orders
 // @desc: Get all orders
 // @route: GET https://mindx2.herokuapp.com/api/orders
 // @access: Private/admin
+
 Get my orders
 // @desc: Get my orders
 // @route: GET https://mindx2.herokuapp.com/api/orders/myorders
 // @access: Private
+
 Get order by id
 // @desc: Get order by id
 // @route: GET https://mindx2.herokuapp.com/api/orders/:id
 // @access: Private
+
 Create new order
 // @desc: Create new order
 // @route: POST https://mindx2.herokuapp.com/api/orders
@@ -159,6 +175,7 @@ Create new order
     "paymentMethod": "cash",
     "shippingPrice": 30
 }
+
 Update Order To Paid (cập nhật order từ chưa thanh toán -> đã thanh toán)
 // @desc: Update Order To Paid
 // @route: PUT https://mindx2.herokuapp.com/api/orders/:id/pay
