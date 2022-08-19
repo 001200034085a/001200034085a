@@ -2,7 +2,7 @@
 
 Register a new user
 // @desc: Register a new user
-// @route: POST https://mindx2.herokuapp.com//api/users
+// @route: POST https://mindx2.herokuapp.com/api/users
 // @access: Public - return token
 // request body:
 {
@@ -14,7 +14,7 @@ Register a new user
 
 Login
 // @desc: Log user into the system
-// @route: POST https://mindx2.herokuapp.com//api/users/login
+// @route: POST https://mindx2.herokuapp.com/api/users/login
 // @access: Public - return token
 // request body:
 {
@@ -40,7 +40,7 @@ Update Profile user
 
 Get all users
 // @desc: Get all users
-// @route: GET https://mindx2.herokuapp.com//api/users
+// @route: GET https://mindx2.herokuapp.com/api/users
 // @access: Private/admin
 
 Delete user
